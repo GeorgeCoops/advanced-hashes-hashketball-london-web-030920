@@ -251,6 +251,6 @@ def most_points_scored
 
   player_points_hash = player_points_hash { |l, r| l[1]<=>r[1] }
 
-  person_with_biggest_feet = shoe_size_hash[-1][0]
+  person_with_biggest_feet = player_points_hash[-1][0]
 
 end

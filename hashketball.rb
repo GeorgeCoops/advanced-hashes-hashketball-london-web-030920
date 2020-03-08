@@ -233,6 +233,6 @@ person_with_biggest_feet = shoe_size_hash[-1][0]
   end
 end
 
-def most_points_scored 
+def most_points_scored
 
 end

@@ -279,5 +279,5 @@ def winning_team
 # counter += 1
 # end
 
-points_hash[-1][0]
+points_hash
 end

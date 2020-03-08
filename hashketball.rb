@@ -234,7 +234,7 @@ person_with_biggest_feet = shoe_size_hash[-1][0]
 end
 
 def most_points_scored
-  
+
   player_points_hash = {}
 
     game_hash.each do |home_away, team|

@@ -235,21 +235,4 @@ end
 
 def most_points_scored
 
-  player_points_hash = {}
-
-    game_hash.each do |home_away, team|
-      team.each do |attribute, data|
-        if attribute == :players
-          data.each do |player|
-
-              player_points_hash[player[:player_name]] = player[:points]
-
-          end
-        end
-      end
-    end
-
-  player_points_hash = player_points_hash { |l, r| l[1]<=>r[1] }
-
-  person_with_most_points = player_points_hash[-1][0]
 end

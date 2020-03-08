@@ -235,5 +235,3 @@ player_with_biggest_shoes =
   end
 
 end
-
-

@@ -271,11 +271,11 @@ def winning_team
       end
     end
     end
-total = 0
-counter = 0
-while counter < points_hash.length
-total += points_hash[0][0]
-counter += 1
-end
-total
+# total = 0
+# counter = 0
+# while counter < points_hash.length
+# total += points_hash[0][0]
+# counter += 1
+# end
+points_hash
 end

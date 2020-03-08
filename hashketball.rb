@@ -274,5 +274,7 @@ def winning_team
 total = 0 
 counter = 0
 while counter < points_hash.length
-points_hash
+total += points_hash[counter][0]
+end
+total 
 end

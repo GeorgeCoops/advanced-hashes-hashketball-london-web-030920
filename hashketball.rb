@@ -201,8 +201,9 @@ def player_stats(players_name)
 end
 
 def big_shoe_rebounds
-shoe_size_hash = {}
 binding.pry
+shoe_size_hash = {}
+
   game_hash.each do |home_away, team|
     team.each do |attribute, data|
       if attribute == :players

@@ -233,52 +233,54 @@ person_with_biggest_feet = shoe_size_hash[-1][0]
   end
 end
 
-def most_points_scored
+# BELOW IS ME STARTING EXTRAS - GOT AS FAR AS 2ND one
 
-  points_hash = {}
-
-    game_hash.each do |home_away, team|
-      team.each do |attribute, data|
-        if attribute == :players
-          data.each do |player|
-
-              points_hash[player[:player_name]] = player[:points]
-
-          end
-        end
-      end
-    end
-
-  points_hash = points_hash.sort { |l, r| l[1]<=>r[1] }
-
-  person_with_most_points = points_hash[-1][0]
-
-end
-
-def winning_team
-  points_hash = {}
-
-    game_hash.each do |home_away, team|
-      if home_away == :home
-      team.each do |attribute, data|
-        if attribute == :players
-          data.each do |player|
-
-              points_hash[player[:player_name]] = player[:points]
-
-          end
-        end
-      end
-    end
-    end
-
-# total = 0
-# counter = 0
-# while counter < points_hash.length
-# total += points_hash[0][0]
-# counter += 1
+# def most_points_scored
+# 
+#   points_hash = {}
+# 
+#     game_hash.each do |home_away, team|
+#       team.each do |attribute, data|
+#         if attribute == :players
+#           data.each do |player|
+# 
+#               points_hash[player[:player_name]] = player[:points]
+# 
+#           end
+#         end
+#       end
+#     end
+# 
+#   points_hash = points_hash.sort { |l, r| l[1]<=>r[1] }
+# 
+#   person_with_most_points = points_hash[-1][0]
+# 
 # end
-
-points_hash
-
-end
+# 
+# def winning_team
+#   points_hash = {}
+# 
+#     game_hash.each do |home_away, team|
+#       if home_away == :home
+#       team.each do |attribute, data|
+#         if attribute == :players
+#           data.each do |player|
+# 
+#               points_hash[player[:player_name]] = player[:points]
+# 
+#           end
+#         end
+#       end
+#     end
+#     end
+# 
+# # total = 0
+# # counter = 0
+# # while counter < points_hash.length
+# # total += points_hash[0][0]
+# # counter += 1
+# # end
+# 
+# points_hash
+# 
+# end

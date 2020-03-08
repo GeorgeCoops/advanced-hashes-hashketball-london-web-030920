@@ -275,5 +275,5 @@ def winning_team
 while i < points_hash
 
 end
-
+points_hash
 end

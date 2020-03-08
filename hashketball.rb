@@ -249,7 +249,7 @@ def most_points_scored
       end
     end
 
-  shoe_size_hash = shoe_size_hash.sort { |l, r| l[1]<=>r[1] }
+  player_points_hash = player_points_hash { |l, r| l[1]<=>r[1] }
 
   person_with_biggest_feet = shoe_size_hash[-1][0]
 

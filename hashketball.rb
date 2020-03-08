@@ -202,22 +202,22 @@ end
 
 def big_shoe_rebounds
 binding.pry
-shoe_size_hash = {}
-
-  game_hash.each do |home_away, team|
-    team.each do |attribute, data|
-      if attribute == :players
-        data.each do |player|
-
-            shoe_size_hash[player[:player_name]] = player[:shoe]
-
-        end
-      end
-    end
-  end
-
-
-shoe_size_hash.sort
+# shoe_size_hash = {}
+# 
+#   game_hash.each do |home_away, team|
+#     team.each do |attribute, data|
+#       if attribute == :players
+#         data.each do |player|
+# 
+#             shoe_size_hash[player[:player_name]] = player[:shoe]
+# 
+#         end
+#       end
+#     end
+#   end
+# 
+# 
+# shoe_size_hash.sort
 end
 
 # player_with_biggest_shoes =

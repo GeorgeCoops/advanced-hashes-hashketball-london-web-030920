@@ -251,6 +251,6 @@ def most_points_scored
 
   points_hash = points_hash.sort { |l, r| l[1]<=>r[1] }
 
-  person_with_biggest_feet = points_hash[-1][0]
+  person_with_most_points = points_hash[-1][0]
 
 end

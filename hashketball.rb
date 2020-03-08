@@ -235,22 +235,22 @@ end
 
 def most_points_scored
 
-  player_points_hash = {}
+  shoe_size_hash = {}
 
     game_hash.each do |home_away, team|
       team.each do |attribute, data|
         if attribute == :players
           data.each do |player|
 
-              player_points_hash[player[:player_name]] = player[:points]
+              shoe_size_hash[player[:player_name]] = player[:points]
 
           end
         end
       end
     end
 
-  player_points_hash = player_points_hash { |l, r| l[1]<=>r[1] }
+  shoe_size_hash = shoe_size_hash.sort { |l, r| l[1]<=>r[1] }
 
-  person_with_biggest_feet = player_points_hash[-1][0]
+  person_with_biggest_feet = shoe_size_hash[-1][0]
 
 end

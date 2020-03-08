@@ -201,7 +201,7 @@ def player_stats(players_name)
 end
 
 def big_shoe_rebounds
-binding.pry
+
 shoe_size_hash = {}
 
   game_hash.each do |home_away, team|

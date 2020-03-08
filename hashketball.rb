@@ -216,8 +216,9 @@ shoe_size_hash = {}
     end
   end
 
+shoe_size_hash.sort { |l, r| l[1]<=>r[1] }
 
-shoe_size_hash.sort
+
 end
 
 # player_with_biggest_shoes =

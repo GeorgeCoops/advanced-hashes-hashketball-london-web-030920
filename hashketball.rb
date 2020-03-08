@@ -235,14 +235,14 @@ end
 
 def most_points_scored
 
-  shoe_size_hash = {}
+  player_points_hash = {}
 
     game_hash.each do |home_away, team|
       team.each do |attribute, data|
         if attribute == :players
           data.each do |player|
 
-              shoe_size_hash[player[:player_name]] = player[:points]
+              player_points_hash[player[:player_name]] = player[:points]
 
           end
         end

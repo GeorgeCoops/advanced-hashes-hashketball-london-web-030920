@@ -272,9 +272,5 @@ def winning_team
     end
     end
 
-i = 0
-while i < points_hash
-
-end
 points_hash
 end
